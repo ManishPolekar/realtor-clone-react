@@ -58,8 +58,7 @@ function EditListing() {
             toast.error("You cannot edit this listing")
             navigate("/")     
         }
-    }, [auth.currentUser.uid, listing, navigate])
-
+    }, [auth.currentUser.uid, listing, navigate]);
 
     function onChange(e) {
         let boolean = null;
