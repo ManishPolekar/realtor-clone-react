@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Slider from '../components/Slider'
+
 
 function Home() {
+
+
   return (
-    <div>Home</div>
+    <div>
+      <Slider/>
+    </div>
   )
 }
 

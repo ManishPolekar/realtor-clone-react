@@ -16,6 +16,7 @@ import { FaShareSquare, FaMapMarkerAlt, FaBed, FaParking, FaChair } from "react-
 import { MdBathroom } from "react-icons/md";
 import { getAuth } from "firebase/auth";
 import Contact from '../components/Contact';
+//import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 
 
 function Listing() {
@@ -127,7 +128,8 @@ function Listing() {
                 <Contact userRef = {listing.userRef} listing={listing}/>
             )}
         </div>
-        <div className="bg-blue-300 w-full h-[200px] lg-[400px] z-10 overflow-x-hidden"></div>
+        <div className="bg-blue-500 w-full h-[200px] md:h-[400px] z-10 overflow-x-hidden mt-6 md:mt-0 md:ml-2">
+        </div>
       </div>
     </main>    
   

@@ -102,8 +102,8 @@ function EditListing() {
             const response = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${process.env.REACT_APP_GEOCODE_API_KEY}`);
             const data = await response.json();
             console.log(data);
-            geolocation.lat = data.results[0]?geometry.location.lat ?? 0;
-            geolocation.lng = data.results[0]?geometry.location.lng ?? 0;
+            geolocation.lat = data.results[0]?.geometry.location.lat ?? 0;
+            geolocation.lng = data.results[0]?.geometry.location.lng ?? 0;
 
             location = data.status === "ZERO_RESULTS && undefined";
 
@@ -116,7 +116,9 @@ function EditListing() {
            geolocation.lat = latitude;
            geolocation.lng = longitude;
         }
-           Note:- create the .env.local to work on method
+           //Note:- create the .env.local to work on method
+           Syntax:-
+           REACT_APP_GEOCODE_API_KEY= ---Your GEOCODE API-----
             
         }*/
         async function storeImage(image) {
